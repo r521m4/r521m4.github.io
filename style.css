@@ -1,0 +1,97 @@
+@media (prefers-color-scheme: light) {
+    body {
+      background-color: rgb(245, 245, 245);
+      color: #000;
+    }
+    body div button {
+        display: inline-block;
+        width: 100%;
+        max-width: 350px;
+        color: #6dbbe2;
+        border: 2px solid #6dbbe2;
+        background: rgb(245, 245, 245);
+        padding: 1em 2em;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: 0.3s;
+      }
+      
+    body div button:hover {
+        color: rgb(245, 245, 245);
+        background: #6dbbe2;
+    }
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(29, 29, 29);
+      color: #fff;
+    }
+    body div button {
+        display: inline-block;
+        width: 100%;
+        max-width: 350px;
+        color: #a0d9f5;
+        border: 2px solid #a0d9f5;
+        background: rgb(29, 29, 29);
+        padding: 1em 2em;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        transition: 0.3s;
+      }
+      
+    body div button:hover {
+        color: rgb(29, 29, 29);
+        background: #a0d9f5;
+    }
+}
+
+
+
+
+
+.buttons{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    display:flex;
+    flex-flow: column;
+}
+body div button{
+    margin: 10px;
+}
+.togleTheme img{
+    position:absolute;
+    top:0%;
+    right:0%;
+    width: 40px;
+    height: 40px;
+}
+.icn{
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    padding: 4px #000000;
+    vertical-align: middle;
+    display: inline-block;
+    border: 5px solid #ffffff;
+}
+.name{
+    display: inline-block;
+}
+
+.buttons span{
+    font-size: 20px;
+}
