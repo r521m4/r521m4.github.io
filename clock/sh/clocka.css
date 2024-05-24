@@ -1,0 +1,23 @@
+  /* 画像とテキストを含むコンテナを中央に配置 */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 画面の高さいっぱいに表示 */
+  }
+
+  /* 画像 */
+  .container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* p要素 */
+  .container p {
+    position: absolute;
+    font-size: 11vw;
+    margin: 0;
+    font-weight: bold;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px #000;
+  }
