@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
+<link href="clock/sh/clocka.css" rel="stylesheet">
+    
+
+
+</head>
+    
+    
+<body>
+    <div class="container">
+        <img src="img/niji2.png" style="transform: scale(-1, -1);" alt="虹の画像">
+        <p id="time"/>
+      <script language="JavaScript">
+      const day = function() {
+        const dt = dayjs(new Date());
+        const element = document.getElementById("time");
+          element.innerHTML = `${dt.format('HH')}<span id="colon">:</span>${dt.format('mm')}`;
+      };
+      setInterval(day, 1000);
+      </script>
+    </div>
+
+</body>
+</html>
