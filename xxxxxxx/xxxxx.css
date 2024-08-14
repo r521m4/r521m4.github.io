@@ -1,0 +1,13 @@
+iframe {
+    margin-left: 5vw;
+    position:absolute;
+    top:-2%;
+    left:-4.5%;
+    height: 10vh;
+}
+body{
+    font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

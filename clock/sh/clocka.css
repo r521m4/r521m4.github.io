@@ -1,23 +1,43 @@
-  /* 画像とテキストを含むコンテナを中央に配置 */
+body{
+  font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container p {
+  position: absolute;
+  font-size: 40vmin;
+  margin: 0;
+  font-weight: bold;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.5vw #000;
+}
+
+/* スマホ */
+@media screen and (max-width:750px) {
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 画面の高さいっぱいに表示 */
+    height: 100vh;
   }
-
-  /* 画像 */
   .container img {
     max-width: 100%;
     max-height: 100%;
   }
-
-  /* p要素 */
   .container p {
     position: absolute;
-    font-size: 11vw;
+    font-size: 40vmin;
     margin: 0;
     font-weight: bold;
     color: whitesmoke;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 0.25vw #000;
   }
+}

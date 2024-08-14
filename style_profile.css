@@ -1,0 +1,205 @@
+iframe {
+    position:absolute;
+    top:-2%;
+    left:-4.5%;
+    height: 10vh;
+}
+body{
+    font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(206, 235, 235);
+    margin-right: 0;
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+.all {
+    align-content: center;
+}
+.imgm {
+    width: 40vh;
+    height: auto;
+}
+.containts {
+    margin-top: 10vh;
+    display: flex;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.txt {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+}
+.stand_pic {
+    margin: 1vw;
+}
+.names {
+    margin-top: 10vh;
+    color: rgb(56, 56, 56);
+}
+.name_JA {
+    font-size: 3vw;
+    margin: 0;
+    color: rgb(56, 56, 56);
+}
+.name_EN {
+    font-size: 1.5vw;
+    margin: 0;
+    color: rgb(121, 121, 121);
+}
+.ov {
+    margin-top: -40vh;
+}
+.datails_0 {
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    margin-right: 20vw;
+    margin-left: 25vw;
+}
+.datails_1 {
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    margin-right: 22.5vw;
+    margin-left: 20vw;
+}
+.datails_2 {
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    margin-right: 25vw;
+    margin-left: 15vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.datails {
+    position: relative;
+    color: rgb(56, 56, 56);
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width:750px) {
+    iframe {
+        justify-content: center;
+        top:-22%;
+        height: 10vh;
+        left: -20%;
+    }
+    body{
+        font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+        display:flex;
+        justify-content: center;
+        background-color: rgb(206, 235, 235);
+        margin-right: 0;
+    }
+    .header {
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    }
+    
+    
+    .left {
+        z-index: 10;
+        margin-top: 8vh;
+    }
+    .all {
+        align-content: center;
+    }
+    .imgm {
+        margin-top: -60vh;
+        width: 50vh;
+        height: auto;
+    }
+    .containts {
+        position: relative;
+        display: block;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .txt {
+        margin-left: 5vh;
+        margin-right: 5vh;
+        position: relative;
+        z-index: 100;
+        margin-top: 40vh;
+        font-size: 5vw;
+        font-weight: 600;
+        color: rgb(56, 56, 56);
+        background-color: rgb(255, 255, 255);
+    }
+    .stand_pic {
+        margin: 1vw;
+    }
+    .names {
+        margin-left: 20px;
+        margin-top: 1vh;
+        color: rgb(56, 56, 56);
+    }
+    .name_JA {
+        font-size: 10vw;
+        margin: 0;
+        color: rgb(56, 56, 56);
+    }
+    .name_EN {
+        font-size: 5vw;
+        margin: 0;
+        color: rgb(121, 121, 121);
+    }
+    .ov {
+        margin-top: -50vh;
+    }
+    .datails_0 {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        margin-right: 10vw;
+        margin-left: 40vw;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 3vh;
+        text-align: right;
+    }
+    .datails_1 {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        margin-right: 40vw;
+        margin-left: 9vw;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 3vh;
+        text-align: left;
+    }
+    .datails_2 {
+        font-size: 2vh;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        margin-right: 5vw;
+        margin-left: 20vw;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        text-align: right;
+    
+    }
+    .datails {
+        margin-top: -75vh;
+        font-size: 5vw;
+        font-weight: 300;
+    }
+}
