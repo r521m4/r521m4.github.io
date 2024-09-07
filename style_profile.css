@@ -5,99 +5,135 @@ iframe {
     height: 10vh;
 }
 body{
+    position: relative;
     font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
     display:flex;
     justify-content: center;
-    background-color: rgb(206, 235, 235);
+    background-color: rgb(243, 248, 250);
+    margin-right: 0;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+
+
+.top{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.left{
+    align-content: end;
+    margin-bottom: 10vw;
+    text-align: center;
     margin-right: 0;
 }
-.header {
-    background-color: rgb(255, 255, 255);
+.right{
+    margin-top: 30%;
+    margin-left: 0;
+}
+#comment{
+    font-size: 150%;
+    margin: 0;
+    margin-bottom: 3vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#name{
+    font-size: 5vw;
+    font-weight: 900;
+    margin: 0;
+    margin-right: 5vw;
+}
+#self_photo{
+    margin-top: -30vh;
+    width: auto;
+    height: 100vh;
+}
+.links{
+    border: solid, 1px;
+    border-right: 0;
+    border-left: 0;
+    background-color: white;
+    margin: 0;
+}
+
+
+body div div button {
+    display: inline-block;
     width: 100%;
-    height: 10vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    color: #6dbbe2;
+    border: 2px solid #6dbbe2;
+    background: rgb(252, 252, 252);
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    margin: 2%;
+    font-size: 140%;
+}
+  
+body div div button:hover {
+    color: rgb(245, 245, 245);
+    background: #6dbbe2;
+}
+.progress-container {
+    width: 70%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-
-
-.all {
-    align-content: center;
+.progress-bar {
+    height: 30px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
 }
-.imgm {
-    width: 40vh;
-    height: auto;
+
+.lang{
+    font-size: 140%;
 }
-.containts {
-    margin-top: 10vh;
+.container{
+    width: 15vw;
+    border: 2px solid #e2f1f8;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+#skills{
     display: flex;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
 }
-.txt {
-    font-size: 1.7vw;
-    font-weight: 600;
-    color: rgb(56, 56, 56);
-}
-.stand_pic {
-    margin: 1vw;
-}
-.names {
-    margin-top: 10vh;
-    color: rgb(56, 56, 56);
-}
-.name_JA {
-    font-size: 3vw;
-    margin: 0;
-    color: rgb(56, 56, 56);
-}
-.name_EN {
-    font-size: 1.5vw;
-    margin: 0;
-    color: rgb(121, 121, 121);
-}
-.ov {
-    margin-top: -40vh;
-}
-.datails_0 {
-    background-color: rgb(247, 247, 247);
-    margin: 0;
-    margin-right: 20vw;
-    margin-left: 25vw;
-}
-.datails_1 {
-    background-color: rgb(247, 247, 247);
-    margin: 0;
-    margin-right: 22.5vw;
-    margin-left: 20vw;
-}
-.datails_2 {
-    background-color: rgb(247, 247, 247);
-    margin: 0;
-    margin-right: 25vw;
-    margin-left: 15vw;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-}
-.datails {
-    position: relative;
-    color: rgb(56, 56, 56);
-    font-size: 1.5vw;
-    font-weight: 300;
-}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:750px) {
     iframe {
         justify-content: center;
-        top:-22%;
-        height: 10vh;
         left: -20%;
+        top: -1%;
     }
     body{
         font-family:'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
@@ -105,101 +141,38 @@ body{
         justify-content: center;
         background-color: rgb(206, 235, 235);
         margin-right: 0;
+        text-align: center;
     }
-    .header {
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        height: 10vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    #comment{
+        font-size: 100%;
+        margin: 0;
+        margin-bottom: 3vh;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    
-    
-    .left {
-        z-index: 10;
-        margin-top: 8vh;
+    #self_photo{
+        margin-top: 0vh;
+        width: auto;
+        height: 50vh;
     }
-    .all {
+    .left{
         align-content: center;
+        margin-bottom: 10vw;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 0;
     }
-    .imgm {
-        margin-top: -60vh;
-        width: 50vh;
-        height: auto;
-    }
-    .containts {
-        position: relative;
-        display: block;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-    .txt {
-        margin-left: 5vh;
-        margin-right: 5vh;
-        position: relative;
-        z-index: 100;
-        margin-top: 40vh;
-        font-size: 5vw;
-        font-weight: 600;
-        color: rgb(56, 56, 56);
-        background-color: rgb(255, 255, 255);
-    }
-    .stand_pic {
-        margin: 1vw;
-    }
-    .names {
-        margin-left: 20px;
-        margin-top: 1vh;
-        color: rgb(56, 56, 56);
-    }
-    .name_JA {
-        font-size: 10vw;
+    .links{
+        border: solid, 1px;
+        border-right: 0;
+        border-left: 0;
+        background-color: white;
         margin: 0;
-        color: rgb(56, 56, 56);
     }
-    .name_EN {
-        font-size: 5vw;
-        margin: 0;
-        color: rgb(121, 121, 121);
+    .progress-bar {
+        font-size: 3vw;
     }
-    .ov {
-        margin-top: -50vh;
-    }
-    .datails_0 {
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-        margin-right: 10vw;
-        margin-left: 40vw;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        margin-bottom: 3vh;
-        text-align: right;
-    }
-    .datails_1 {
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-        margin-right: 40vw;
-        margin-left: 9vw;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-    .datails_2 {
-        font-size: 2vh;
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-        margin-right: 5vw;
-        margin-left: 20vw;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        text-align: right;
-    
-    }
-    .datails {
-        margin-top: -75vh;
-        font-size: 5vw;
-        font-weight: 300;
+    .container{
+        width: 40vw;
     }
 }

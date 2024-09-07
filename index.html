@@ -2,29 +2,91 @@
     <head>
         <meta charset="utf-8">
         <title>くう | r521m4</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_profile.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     </head>
     <body>
-        <div class="all">
-            <div class="togleTheme">
-                <source srcset="night.png" media="(prefers-color-scheme: dark)">
-                <img src="day.png">
-                <iframe id="clock" src="clockzip.html" scrolling="no" frameborder=0></iframe>
-            </div>
-            <div>
-                <img src="icneasl.jpg" class="icn">
-                <h1 class="name">しらかし くう</h2>
-            </div>
-            <div class="buttons">
-                <button onclick="location.href ='profile.html'" class="btn_profile"><span>プロフィール</span></button>
-                <button onclick="location.href ='https://www.youtube.com/channel/UCeLfHWkuh1VygBcCW9qIazQ?sub_confirmation=1'" class="btn_youtube"><span>Youtube</span></button>
-                <button onclick="location.href ='https://www.tiktok.com/@r521m4'" class="btn_Amazon"><span>TikTok</span></button>
-                <button onclick="location.href ='https://www.twitch.tv/r521m4'" class="btn_twitch"><span>Twitch</span></button>
-                <button onclick="location.href ='https://twitter.com/r521m4'" class="btn_twitter"><span>Twitter</span></button>
-                <button onclick="location.href ='https://discord.gg/sw9NJe42Fz'" class="btn_Discord"><span>Discord鯖</span></button>
-                <button onclick="location.href ='https://github.com/r521m4'" class="btn_gitHub"><span>GitHub</span></button>
-                <button onclick="location.href ='https://www.amazon.jp/hz/wishlist/ls/1KWU14ZX04O15?ref_=wl_share'" class="btn_Amazon"><span>ほしいものリスト</span></button>
-            </div>
+        <div class="header">
+            <iframe id="clock" src="clockzip.html" scrolling="no" frameborder=0></iframe>
         </div>
+        <div class="all">
+            <div class="top">
+                <div class="left">
+                    <p id="comment">やってみなくちゃわからない!!腰弱い系Vtuber!! あ、事務所はいったっす、、、</p>
+                    <p id="name">くう</p>
+                </div>
+                <div class="right">
+                    <img src="posssssss.png" alt="しゃしん" id="self_photo">
+                </div>
+            </div>
+            <div class="links">
+                <h2>LINKS</h2>
+                <div class="buttons">
+                    <button onclick="location.href ='https://www.youtube.com/channel/UCeLfHWkuh1VygBcCW9qIazQ?sub_confirmation=1'" class="btn_youtube"><span>Youtube</span></button>
+                    <button onclick="location.href ='https://www.tiktok.com/@r521m4'" class="btn_Amazon"><span>TikTok</span></button>
+                    <button onclick="location.href ='https://twitter.com/r521m4'" class="btn_twitter"><span>Twitter</span></button>
+                    <button onclick="location.href ='https://discord.gg/sw9NJe42Fz'" class="btn_Discord"><span>Discord鯖</span></button>
+                    <button onclick="location.href ='links.html'" class="btn_links"><span>そのほか</span></button>
+                </div>
+            </div>
+            <div class="skillcont">
+                <h2>SKILLS</h2>
+                <div id="skills">
+                
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            window.onload = function() {
+
+            };
+
+            document.addEventListener('DOMContentLoaded', () => {
+            // skills.jsonを読み込み、HTMLに出力する関数
+            fetch('json/skills.json')
+                .then(response => response.json())
+                .then(data => {
+                // programingのデータを取得
+                const programming = data.programing;
+                const tools = data.tools;
+
+                
+                
+                // HTMLに表示するための変数を準備
+                let output = '';
+                
+                // 各プログラミングスキルとスコアをループしてHTMLに変換
+                for (const language in programming) {
+                    output += `<div class="container"><div class="lang">${language}</div> <div class="progress-container"><div class="progress-bar" id="${language}">${programming[language]}</div></div></div>`;
+                }
+                for (const tool in tools) {
+                    output += `<div class="container"><div class="lang">${tool}</div> <div class="progress-container"><div class="progress-bar" id="${tool}">${tools[tool]}</div></div></div>`;
+                }
+                
+                // skills要素に出力
+                document.getElementById('skills').innerHTML = output;
+
+
+                
+                for (const language in programming) {
+                    const languages = document.getElementById(language);
+                    languages.style.width = programming[language];
+                }
+                for (const tool in tools) {
+                    const toola = document.getElementById(tool);
+                    toola.style.width = tools[tool];
+                }
+                })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+
+                
+            });
+
+            
+
+        </script>
     </body>
 </html>

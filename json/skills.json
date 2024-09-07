@@ -1,0 +1,16 @@
+{
+    "programing": {
+        "Python": "54%",
+        "JavaScript":"30%",
+        "HTML": "20%",
+        "CSS": "20%",
+        "Java": "62%",
+        "Kotlin": "73%",
+        "Lua": "30%"
+    },
+    "tools": {
+        "Blender": "33%",
+        "Unity": "21%"
+
+    }
+}
